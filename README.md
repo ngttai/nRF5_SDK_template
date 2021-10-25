@@ -46,16 +46,16 @@ To get a local copy up and running follow these steps.
 ```sh
 # Build
    make clean && make BOARD=<board_name> BUILD_TYPE=<build_type>
-   # <board_name> are: `ss_unitag` or `pca10056`
+   # <board_name> are: `pca10040` or `pca10056`
    # <build_type> are: `Debug` or `Release`
    Example:
-   make clean && make BOARD=ss_unitag BUILD_TYPE=Release
+   make clean && make BOARD=pca10040 BUILD_TYPE=Release
 # Flash
    make flash BOARD=<board_name> BUILD_TYPE=<build_type>
-   # <board_name> are: `ss_unitag` or `pca10056`
+   # <board_name> are: `pca10040` or `pca10056`
    # <build_type> are: `Debug` or `Release`
    Example:
-   make flash BOARD=ss_unitag BUILD_TYPE=Release
+   make flash BOARD=pca10040 BUILD_TYPE=Release
 ```
 
 ## License

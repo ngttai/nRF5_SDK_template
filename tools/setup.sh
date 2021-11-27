@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
-GNU_INSTALL_ROOT=$(which arm-none-eabi-gcc | egrep -o --color="never" "\/.*\/")
+export GNU_INSTALL_ROOT=$(which arm-none-eabi-gcc | egrep -o --color="never" "\/.*\/")
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     # Linux OS
